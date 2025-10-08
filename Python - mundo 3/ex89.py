@@ -1,6 +1,7 @@
 medias = []
 dados = []
 med = 0
+
 while True:
     dados.append(str(input('Nome: ')))
     dados.append(float(input('Nota 1: ')))
@@ -10,11 +11,14 @@ while True:
     perg = input('Quer continuar? [S/N] ').upper()
     if perg == "N":
         break
+
 print("-="*30)
 print("No. Nome         Media")
 print("------------------------")
+
 for i in medias:
     print(f'{medias.index(i)}  {i[0]}        {(i[1]+ i[2]) / 2}')
+    
 print("------------------------")
 while True:
     pessoa = int(input('Mostrar notas de qual aluno? (999 interrompe): '))
