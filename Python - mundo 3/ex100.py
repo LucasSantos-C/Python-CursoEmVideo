@@ -17,7 +17,6 @@ def sorteia(vetor):
         sleep(0.5)
     print("Pronto!")
 
-
 vetor = []
 sorteia(vetor)
 somaPar(vetor)
