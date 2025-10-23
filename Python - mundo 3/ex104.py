@@ -3,11 +3,13 @@ def leaInt(msg):
     valor = 0
     while True:
         n = str(input(msg))
+
         if n.isnumeric():
             valor = int(n)
             ok = True
         else:
             print('\033[0;31mErro! Digite um númeor inteiro válido.\033[m')
+            
         if ok:
             break
     return valor
