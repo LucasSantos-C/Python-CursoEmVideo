@@ -1,27 +1,14 @@
-import menu
-from time import sleep
-from os import system
+from menu import *
 
-def main():
-    menu.MenuPrincipal()
-    while True:
-        try:
-            option = int(input("Sua Opção: "))
-            if option == 1:
-                menu.VerCadastro()
-                system('cls')
-                menu.MenuPrincipal()
-            elif option == 2:
-                menu.CadastrarPessoas()
-                system('cls')
-                menu.MenuPrincipal()
-            elif option == 3:
-                print("Encerrando o Programa...")
-                sleep(1)
-                break
-            else:
-                    print("Erro: Digite uma opção válida")
-        except (ValueError, TypeError):
-                print("Erro: você digitou algo errado")
-
-main()
+while True:
+    resp = menu(["Ver pesssoas cadastradas", "Cadastrar nova Pessoa", "Sair do Sistema"])
+    if resp == 1:
+        VerCadastro()
+    elif resp == 2:
+        CadastrarPessoas()
+    elif resp == 3:
+        print("\033[31mEncerrando programa...\033[m")
+        sleep(2)
+        break
+    else:
+        print("\033[31mErro: Digite algo válido\033[m")
