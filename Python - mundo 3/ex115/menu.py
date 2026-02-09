@@ -22,17 +22,6 @@ def titulo(txt):
     print(txt.center(42))
     print(linha())
 
-def VerCadastro():
-    system('cls')
-    titulo("LISTA DE PESSOAS")
-    sleep(2)
-    system('cls')
-    
-def CadastrarPessoas():
-    system('cls')
-    titulo("CADASTRO")
-    sleep(2)
-    system('cls')
 
 def menu(lista):
     titulo("MENU PRINCIPAL")
